@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 import { connectRouter } from 'connected-react-router';
 
-import Images from './Images';
+import Home from './Home';
 
 
 export default history =>
   combineReducers({
     router: connectRouter(history),
-    images:Images
+    home:Home
   });

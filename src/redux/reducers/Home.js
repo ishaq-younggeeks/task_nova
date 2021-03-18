@@ -4,7 +4,7 @@ const INIT_STATE = {
 
 export default (state = INIT_STATE, action) => {
   switch (action.type) {
-    case SET_DASHBOARD_DATA: {
+    case "SET_IMAGE_DATA": {
       return { ...state, imageData: action.payload };
     }
     default:

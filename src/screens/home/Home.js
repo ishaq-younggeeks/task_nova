@@ -12,11 +12,13 @@ const Home = (props) => {
     console.log("home images",images)
     return (
         <div>
-           <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
+           <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 4}}>
            <Masonry>
            <ImageWithText images={images}/>
            <ImageWithText images={images}/>
            <ImageWithText images={images}/>
+           <ImageWithText images={images}/>
+
                 </Masonry>
            </ResponsiveMasonry>
         </div>

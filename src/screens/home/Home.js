@@ -12,6 +12,7 @@ const Home = (props) => {
   console.log("home images", images);
   return (
     <div className="padBody">
+      <div className="title_description">
       <h3 className="hTitle">Candy cotton candy sesame snaps biscuit</h3>
       <p className="pDsc">
         Candy cotton candy sesame #Design #HR biscuit dessert topping halvah
@@ -20,6 +21,8 @@ const Home = (props) => {
         chocolate cake ice cream jelly
         <br /> beans chocolate cake soufflé candy.
       </p>
+      </div>
+      <div style={{marginTop:'145px'}}>
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}>
         <Masonry>
           <ImageWithText images={images} />
@@ -28,6 +31,7 @@ const Home = (props) => {
           <ImageWithText images={images} />
         </Masonry>
       </ResponsiveMasonry>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,32 @@
+.footer{
+    position:fixed;
+    bottom: 0;
+    width:100%;
+    height:65px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.addIcon{
+
+}
+
+.footer-left{
+    display: flex;
+}
+
+.footer-left>div{
+    padding:20px;
+}
+.footer-right>div{
+    padding:20px;
+}
+
+.footer-left>div>img{
+    vertical-align:middle;
+}

@@ -9,9 +9,13 @@
   margin-bottom: 16px;
   background: #f5f6f7;
   padding-bottom: 10px;
+
 }
 .padBody {
   padding: 0px 120px;
+  margin-top:65px;
+  display: flex;
+  flex-direction: column;
 }
 .imageCard_image {
   width: 100%;
@@ -33,7 +37,7 @@
 }
 
 .image_description_right {
-  flex: 1;
+  /* flex: 1; */
   padding-right: 10px;
 }
 
@@ -98,4 +102,12 @@ i.fas.fa-comment-alt {
   margin-top: 8px;
   margin-bottom: 22px;
   margin-left: 10px;
+}
+
+.title_description{
+  margin-top: 0px;
+  position: fixed;
+  z-index: 100;
+  background: white;
+  width:100%;
 }

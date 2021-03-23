@@ -1,7 +1,6 @@
 import React from "react";
 import "./ImageWithTextStyle.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import _ from "lodash";
 
 const ImageWithText = (props) => {
   const { images } = props;
@@ -13,7 +12,7 @@ const ImageWithText = (props) => {
         ? images.map((item, index) => {
             return (
               <div className="imageCard" key={index}>
-                <div>
+                <div >
                   <LazyLoadImage
                   className="imageCard_image"
                     delayTime={300}

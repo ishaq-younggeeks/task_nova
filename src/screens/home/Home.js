@@ -1,43 +1,47 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
- import {getImages} from '../../redux/actions/home'
- import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
-import ImageWithText from '../../component/ImageWithText'
+import { getImages } from "../../redux/actions/home";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import ImageWithText from "../../component/ImageWithText";
 const Home = (props) => {
-    const {getImages,images} = props
-    useEffect(() =>{
-        getImages()
-    },[])
+  const { getImages, images } = props;
+  useEffect(() => {
+    getImages();
+  }, []);
 
-    console.log("home images",images)
-    return (
-        <div>
-           <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 4}}>
-           <Masonry>
-           <ImageWithText images={images}/>
-           <ImageWithText images={images}/>
-           <ImageWithText images={images}/>
-           <ImageWithText images={images}/>
+  console.log("home images", images);
+  return (
+    <div className="padBody">
+      <h3 className="hTitle">Candy cotton candy sesame snaps biscuit</h3>
+      <p className="pDsc">
+        Candy cotton candy sesame #Design #HR biscuit dessert topping halvah
+        marshmallow
+        <br /> gummies. Pie toffee dragée chocolate toffee biscuit. Icing
+        chocolate cake ice cream jelly
+        <br /> beans chocolate cake soufflé candy.
+      </p>
+      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 4 }}>
+        <Masonry>
+          <ImageWithText images={images} />
+          <ImageWithText images={images} />
+          <ImageWithText images={images} />
+          <ImageWithText images={images} />
+        </Masonry>
+      </ResponsiveMasonry>
+    </div>
+  );
+};
 
-                </Masonry>
-           </ResponsiveMasonry>
-        </div>
-    )
-}
-
-const mapStateToProps = state => {
-
-    const {home} = state
-    return {
-        images:home.imageData
-  
-    };
+const mapStateToProps = (state) => {
+  const { home } = state;
+  return {
+    images: home.imageData,
   };
-  const mapDispatchToProps = dispatch => {
-    return {
-        getImages: () => dispatch(getImages()),
-
-    };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getImages: () => dispatch(getImages()),
   };
+};
 
-export default connect(mapStateToProps,mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

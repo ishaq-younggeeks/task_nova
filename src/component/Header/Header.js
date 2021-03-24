@@ -10,8 +10,10 @@ const Header = () => {
     <>
       <div className="header">
         <div className="header-left">
-            <div>          <img src={leftArrow} />
-</div>
+          <div>
+            {" "}
+            <img src={leftArrow} />
+          </div>
         </div>
         <div className="header-right">
           <div>
@@ -21,6 +23,7 @@ const Header = () => {
             <div>
               <img
                 src={process.env.PUBLIC_URL + "/img/avatar-1.jpg"}
+                className="image-header-img"
                 width="24px"
                 height="24px"
               />
@@ -28,6 +31,7 @@ const Header = () => {
             <div>
               <img
                 src={process.env.PUBLIC_URL + "/img/avatar-1.jpg"}
+                className="image-header-img"
                 width="24px"
                 height="24px"
               />
@@ -35,14 +39,16 @@ const Header = () => {
             <div>
               <img
                 src={process.env.PUBLIC_URL + "/img/avatar-1.jpg"}
+                className="image-header-img"
                 width="24px"
                 height="24px"
               />
             </div>
-          </div>
-          <div>
+            <div>
             <img src={user} />
           </div>
+          </div>
+         
           <div>
             <img src={back} />
           </div>

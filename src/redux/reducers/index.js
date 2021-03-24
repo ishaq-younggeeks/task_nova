@@ -1,11 +1,10 @@
-import { combineReducers } from 'redux';
-import { connectRouter } from 'connected-react-router';
+import { combineReducers } from "redux";
+import { connectRouter } from "connected-react-router";
 
-import Home from './Home';
+import Home from "./Home";
 
-
-export default history =>
+export default (history) =>
   combineReducers({
     router: connectRouter(history),
-    home:Home
+    home: Home,
   });

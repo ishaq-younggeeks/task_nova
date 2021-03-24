@@ -5,12 +5,9 @@ import App from "./App";
 import { Provider } from "react-redux";
 import { ConnectedRouter } from "connected-react-router";
 import reportWebVitals from "./reportWebVitals";
-import configureStore, { history } from './redux/store';
-
+import configureStore, { history } from "./redux/store";
 
 export const store = configureStore();
-
-
 
 const MOUNT_ROOT = document.getElementById("root");
 

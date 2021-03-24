@@ -111,3 +111,13 @@ i.fas.fa-comment-alt {
   background: white;
   width:100%;
 }
+.gallerySection{
+  margin-top:145px;
+}
+@media (max-width:720px){
+  .padBody{padding:0px 0px;}
+  .gallerySection{
+    margin-top:230px;
+  }
+  
+}

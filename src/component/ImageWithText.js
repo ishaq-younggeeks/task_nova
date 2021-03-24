@@ -12,9 +12,9 @@ const ImageWithText = (props) => {
         ? images.map((item, index) => {
             return (
               <div className="imageCard" key={index}>
-                <div >
+                <div>
                   <LazyLoadImage
-                  className="imageCard_image"
+                    className="imageCard_image"
                     delayTime={300}
                     visibleByDefault={false}
                     src={item.image}
@@ -28,15 +28,30 @@ const ImageWithText = (props) => {
                     <p>title</p>
                   </div>
                   <div className="image_description">
-                      <div className="image_description_left">
-                      <img src={process.env.PUBLIC_URL+"/img/avatar-1.jpg"}  width='20px'   height='20px'/>
-                    <span>{item.text}</span>
+                    <div className="image_description_left">
+                      <img
+                        src={process.env.PUBLIC_URL + "/img/avatar-1.jpg"}
+                        width="20px"
+                        height="20px"
+                      />
+                      <span>{item.text}</span>
                     </div>
                     <div className="image_description_right">
-                    <span><i className="fas fa-heart" style={{color:"red"}}></i>1</span>
-                    <span><i class="fas fa-comment-alt" style={{color:"grey"}}></i>2</span>
-
-                        </div>
+                      <span>
+                        <i
+                          className="fas fa-heart"
+                          style={{ color: "red" }}
+                        ></i>
+                        1
+                      </span>
+                      <span>
+                        <i
+                          class="fas fa-comment-alt"
+                          style={{ color: "grey" }}
+                        ></i>
+                        2
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
